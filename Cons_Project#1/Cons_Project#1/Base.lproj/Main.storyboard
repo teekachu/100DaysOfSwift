@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jQp-Qi-1C2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="36S-Lg-GEa">
+            <objects>
+                <tableViewController id="ZDA-id-ArU" customClass="ViewController" customModule="Cons_Project_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VmA-fV-dYq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Flag" textLabel="6wN-A7-qsH" style="IBUITableViewCellStyleDefault" id="oXS-n6-XRR">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oXS-n6-XRR" id="qKx-eV-Zba">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6wN-A7-qsH">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZDA-id-ArU" id="XFc-px-BdM"/>
+                            <outlet property="delegate" destination="ZDA-id-ArU" id="RuU-Cp-zsb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="G3p-YP-v73"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzF-vV-wP5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518.840579710145" y="-65.625"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="xyI-wK-TeI">
+            <objects>
+                <viewController storyboardIdentifier="DetailPic" id="uMl-A6-exl" customClass="DetailViewController" customModule="Cons_Project_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xMR-Jc-ZVf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="germany.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dCS-0c-UAY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dCS-0c-UAY" firstAttribute="leading" secondItem="xTZ-wJ-1ys" secondAttribute="leading" id="1k5-cB-blI"/>
+                            <constraint firstItem="dCS-0c-UAY" firstAttribute="centerY" secondItem="xMR-Jc-ZVf" secondAttribute="centerY" id="S9h-db-VCH"/>
+                            <constraint firstItem="dCS-0c-UAY" firstAttribute="centerX" secondItem="xMR-Jc-ZVf" secondAttribute="centerX" id="eeq-Qk-lc6"/>
+                            <constraint firstItem="dCS-0c-UAY" firstAttribute="top" secondItem="xMR-Jc-ZVf" secondAttribute="topMargin" constant="-44" id="sJW-dW-G2w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xTZ-wJ-1ys"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonTapped" destination="dCS-0c-UAY" id="lcr-y5-gEc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NGK-mv-DvT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2369.5652173913045" y="-67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y7b-Ba-wAj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jQp-Qi-1C2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6wq-3Y-zUY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZDA-id-ArU" kind="relationship" relationship="rootViewController" id="cxg-Ta-dUF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2M4-vd-XlG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608.69565217391312" y="-65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="germany.png" width="200" height="100"/>
+    </resources>
+</document>

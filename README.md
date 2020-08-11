@@ -9,3 +9,5 @@ P1: Intro to Tableviews and loading pictures as UIimage in another viewControlle
 P2: Guess the flags game. Intro to buttons, animation,  nagivation bar.
 
 P3: Updated project 1 to add function to share image via UIActivityViewController.
+
+Cons 1: Challange project, consolidation of P1-3,to create tableview listing all flags, opening each image in another viewController, and share image using UIActivityViewController.

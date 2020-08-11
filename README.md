@@ -13,3 +13,5 @@ P3: Updated project 1 to add function to share image via UIActivityViewControlle
 Cons 1: Challange project, consolidation of P1-3,to create tableview listing all flags, opening each image in another viewController, and share image using UIActivityViewController.
 
 P4: Easy browser app, intro to WKWebView, URLRequest, UIToolBar, UIProgressView and key-value observing. View websites from a drop down list, and using decisionHandler and navigationDeligate to control access.( also includes 4-3, it's basically project 4 in tableView format. )
+
+P5: Word game, create other words using the letters in word given. Intro to closure. 

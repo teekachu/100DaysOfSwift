@@ -16,4 +16,8 @@ P4: Easy browser app, intro to WKWebView, URLRequest, UIToolBar, UIProgressView 
 
 P5: Word game, create other words using the letters in word given. Intro to closure. 
 
-P6: Intro to autoLayout using both Visual Format Language , and Auto Layout Constraints. 
+P6: Intro to autoLayout using both Visual Format Language , and Anchors.
+
+P7: Whitehouse Petitions app, intro to JSON parsing. 
+
+P8: Word-guessing game using buttons. Included personal project " Me & You". 

@@ -17,9 +17,9 @@ P5: Word game, create other words using the letters in word given. Intro to clos
 
 P6: Intro to autoLayout using both Visual Format Language , and Anchors.
 
-P7: Whitehouse Petitions app, intro to JSON parsing. 
+P7: Whitehouse Petitions app, intro to JSON parsing. (Included personal project " Me & You". )
 
-P8: Word-guessing game using buttons. Included personal project " Me & You". 
+P8: Word-guessing game using buttons. 
 
 
 

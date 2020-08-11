@@ -15,3 +15,5 @@ Cons 1: Challange project, consolidation of P1-3,to create tableview listing all
 P4: Easy browser app, intro to WKWebView, URLRequest, UIToolBar, UIProgressView and key-value observing. View websites from a drop down list, and using decisionHandler and navigationDeligate to control access.( also includes 4-3, it's basically project 4 in tableView format. )
 
 P5: Word game, create other words using the letters in word given. Intro to closure. 
+
+P6: Intro to autoLayout using both Visual Format Language , and Auto Layout Constraints. 

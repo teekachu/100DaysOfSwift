@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "toppng.com-okémon-3d-models-of-pikachu-eevee-the-kanto-starters-pokemon-happy-birthday-for-love-289x353.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

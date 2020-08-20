@@ -1,0 +1,32 @@
+{
+    "results":
+[{
+        "name": "Czech Republic",
+        "timeOfVisit": 2018,
+        "rating": 5,
+        "favoriteCity": "Prague",
+        "favoriteMemory": "Sunset on Charles bridge is probably one of the most romantic and beautiful moment of my life"
+    },
+    {
+        "name": "Spain",
+        "timeOfVisit": 2019,
+        "rating": 5,
+        "favoriteCity": "Granada",
+        "favoriteMemory": "The alhambra blew my mind and stole my heart"
+    },
+    {
+        "name": "Taiwan",
+        "timeOfVisit": 2017,
+        "rating": 5,
+        "favoriteCity": "Taipei",
+        "favoriteMemory": "Meeting all the good friends and walking around XiMenDing"
+    },
+    {
+        "name": "Belgium",
+        "timeOfVisit": 2018,
+        "rating": 5,
+        "favoriteCity": "Bruges",
+        "favoriteMemory": "Seeing the beautiful Bruges and eating belguim chocolate"
+    }
+]
+}

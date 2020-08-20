@@ -29,6 +29,23 @@ P11: Pachinko game. Intro to SpriteKit framework.
 
 P12: I didn't upload this one. It is an intro to userDefaults, saving data and user settings for later use. 
 
+P13: Instafilter app, upload a photo and apply filters to it. Intro to Core Image and UISlider. Save to photos when done.
+
+P14: Whack-a-Penguin game on spriteKit. 
+
+P15: Basic animations. As you can see I REALLY LOVE pikachu. 
+
+P16: Intro to Mapkit ! SO FUN. 
+
+P17: Space race game on Ipad. Intro to concepts such as Per-pixel collision detection, linear and angular damping. Rocket science ;) 
+
+P18: I didn't upload this one. It is an intro to debugging. 
+
+P19: Javascript Injection, Intro to Safari extension and UITextView. 
+
+P20: Fireworks game on Ipad. Select fireworks of the same color and shake your ipad to explode. 
+
+
 
 
 /CONSOLIDATED PROJECTS:
@@ -41,7 +58,14 @@ Cons 3: Challange project, consolidation of P7-9, to create a hangman word game.
 
 Cons 4: Challange project, consolidation of P10-12, to create a digital disposable camera. Let user snap a photo, add a caption and view whenever. The photos will be shown in a table view, users can tap on the photo to open it in a new view controller. 
 
+Cons 5: MISSING *** Challange project, consolidation of P13-15.
+
+Cons 6: Challange project, consolidation of P16-18. Haunted house game, tap on ghost to explode them. 
+
+
 
 /PERSONAL PROJECTS:
 
-1: " Me & You": a word guessing project I made for a special somebody. 
+1: "Me & You": a word guessing project I made for a special somebody. 
+
+2: Whack-a-Trump game on SpriteKit. Don't hit Pikachu, and please don't get political here, this was just for fun. 

@@ -45,7 +45,9 @@ P19: Javascript Injection, Intro to Safari extension and UITextView.
 
 P20: Fireworks game on Ipad. Select fireworks of the same color and shake your ipad to explode. 
 
+P21: Intro to notifications, UNUSerNotificationCenter and UNNotificationRequest. 
 
+P24: Working with Strings, NSAttributedString.
 
 
 /CONSOLIDATED PROJECTS:

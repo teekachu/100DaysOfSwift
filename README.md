@@ -47,7 +47,13 @@ P20: Fireworks game on Ipad. Select fireworks of the same color and shake your i
 
 P21: Intro to notifications, UNUSerNotificationCenter and UNNotificationRequest. 
 
+P22: PENDING*** 
+
+P23: PENDING*** 
+
 P24: Working with Strings, NSAttributedString.
+
+
 
 
 /CONSOLIDATED PROJECTS:
@@ -60,9 +66,13 @@ Cons 3: Challange project, consolidation of P7-9, to create a hangman word game.
 
 Cons 4: Challange project, consolidation of P10-12, to create a digital disposable camera. Let user snap a photo, add a caption and view whenever. The photos will be shown in a table view, users can tap on the photo to open it in a new view controller. 
 
-Cons 5: MISSING *** Challange project, consolidation of P13-15.
+Cons 5: PENDING*** Challange project, consolidation of P13-15.
 
 Cons 6: Challange project, consolidation of P16-18. Haunted house game, tap on ghost to explode them. 
+
+Cons 7: PENDING*** Challange project, consolidation of P19-21. 
+
+Cons 8: Challange project, consolidation of P22-24. Extensions practice 
 
 
 
@@ -70,4 +80,4 @@ Cons 6: Challange project, consolidation of P16-18. Haunted house game, tap on g
 
 1: "Me & You": a word guessing project I made for a special somebody. 
 
-2: Whack-a-Trump game on SpriteKit. Don't hit Pikachu, and please don't get political here, this was just for fun. 
+

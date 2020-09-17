@@ -1,0 +1,73 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		F41100DA25128C8300275565 /* playground-Extensions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "playground-Extensions.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		F41100D325128C6F00275565 = {
+			isa = PBXGroup;
+			children = (
+				F41100DA25128C8300275565 /* playground-Extensions.playground */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		F41100D425128C6F00275565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+			};
+			buildConfigurationList = F41100D725128C6F00275565 /* Build configuration list for PBXProject "Cons_Project#8" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F41100D325128C6F00275565;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		F41100D825128C6F00275565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F41100D925128C6F00275565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F41100D725128C6F00275565 /* Build configuration list for PBXProject "Cons_Project#8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41100D825128C6F00275565 /* Debug */,
+				F41100D925128C6F00275565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F41100D425128C6F00275565 /* Project object */;
+}

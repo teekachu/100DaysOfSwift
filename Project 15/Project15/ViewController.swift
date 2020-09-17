@@ -8,10 +8,23 @@
 
 import UIKit
 
+//extension UIView{
+//    func bounceOut(_ duration: Double){
+//
+//        UIView.animate(withDuration: duration) {[weak self] in
+//
+//            self?.transform = CGAffineTransform(scaleX: 0.0001, y: 0.0001)
+//        }
+//    }
+//}
+
 class ViewController: UIViewController {
+
     
     var imageView: UIImageView!
+    
     var currentAnimation = 0
+    
     @IBAction func tapped(_ sender: UIButton) {
         sender.isHidden = true
         //        UIView.animate(withDuration: 1, delay: 0, options: []
@@ -64,7 +77,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let pikachuPic = UIImage(named: "pikachu") else{return}
+        guard let pikachuPic = UIImage(named: "penguin") else{return}
         imageView = UIImageView(image: pikachuPic)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(imageView)
@@ -77,9 +90,14 @@ class ViewController: UIViewController {
             imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
         
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(action))
+        
     }
     
-    
+//    @objc func action(){
+//        self.view.bounceOut(3)
+//    }
+//
     
 }
 

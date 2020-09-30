@@ -75,7 +75,7 @@ Cons 5: PENDING*** Challange project, consolidation of P13-15.
 
 Cons 6: Challange project, consolidation of P16-18. Haunted house game, tap on ghost to explode them. 
 
-Cons 7: PENDING*** Challange project, consolidation of P19-21. 
+Cons 7: Challange project, consolidation of P19-21. IOS notes.
 
 Cons 8: Challange project, consolidation of P22-24. Extensions practice 
 

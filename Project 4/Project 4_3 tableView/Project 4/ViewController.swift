@@ -11,6 +11,7 @@ import WebKit
 class ViewController: UIViewController, WKNavigationDelegate {
     var webView: WKWebView!
     var progressView: UIProgressView!
+    
     var websites = ["google.com","apple.com","hackingwithswift.com"]
     var selectedSite: String?
     

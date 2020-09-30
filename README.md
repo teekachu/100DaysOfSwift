@@ -53,6 +53,11 @@ P23: PENDING***
 
 P24: Working with Strings, NSAttributedString.
 
+P25: Working with Multipeer Networking, MCSession, MCBrowserViewController
+
+P26: PENDING*** 
+
+P27: Working with CoreGraphics 
 
 
 
@@ -74,6 +79,7 @@ Cons 7: PENDING*** Challange project, consolidation of P19-21.
 
 Cons 8: Challange project, consolidation of P22-24. Extensions practice 
 
+Cons 9: Challange project, consolidation of P25-27. Core Graphics practice 
 
 
 /PERSONAL PROJECTS:

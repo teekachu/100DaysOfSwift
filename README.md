@@ -55,7 +55,7 @@ P24: Working with Strings, NSAttributedString.
 
 P25: Working with Multipeer Networking, MCSession, MCBrowserViewController
 
-P26: PENDING*** 
+P26: PENDING*** SpriteKit - Marble Maze Game ( IPAD only)
 
 P27: Working with CoreGraphics 
 

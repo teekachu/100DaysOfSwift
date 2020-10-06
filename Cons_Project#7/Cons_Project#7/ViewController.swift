@@ -135,6 +135,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            self.notes.remove(at: indexPath.row)
+            self.filteredNotes.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+        
+        save()
+    }
+    
     //MARK: SearchBar
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         // first set the filteredNotes to blank.

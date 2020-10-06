@@ -17,6 +17,7 @@
 		F4300B3E2525064F00047E0C /* Cons_Project_7UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4300B3D2525064F00047E0C /* Cons_Project_7UITests.swift */; };
 		F4300B4F2525148F00047E0C /* entryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4300B4E2525148F00047E0C /* entryViewController.swift */; };
 		F4300B542525149D00047E0C /* noteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4300B532525149D00047E0C /* noteViewController.swift */; };
+		F499B57D252BEAC30033DB67 /* eachNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499B57C252BEAC30033DB67 /* eachNote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		F4300B3F2525064F00047E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4300B4E2525148F00047E0C /* entryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = entryViewController.swift; sourceTree = "<group>"; };
 		F4300B532525149D00047E0C /* noteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteViewController.swift; sourceTree = "<group>"; };
+		F499B57C252BEAC30033DB67 /* eachNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eachNote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				F4300B1B2525064C00047E0C /* AppDelegate.swift */,
 				F4300B1D2525064C00047E0C /* SceneDelegate.swift */,
 				F4300B1F2525064C00047E0C /* ViewController.swift */,
+				F499B57C252BEAC30033DB67 /* eachNote.swift */,
 				F4300B212525064C00047E0C /* Main.storyboard */,
 				F4300B4E2525148F00047E0C /* entryViewController.swift */,
 				F4300B532525149D00047E0C /* noteViewController.swift */,
@@ -267,6 +270,7 @@
 				F4300B202525064C00047E0C /* ViewController.swift in Sources */,
 				F4300B542525149D00047E0C /* noteViewController.swift in Sources */,
 				F4300B4F2525148F00047E0C /* entryViewController.swift in Sources */,
+				F499B57D252BEAC30033DB67 /* eachNote.swift in Sources */,
 				F4300B1C2525064C00047E0C /* AppDelegate.swift in Sources */,
 				F4300B1E2525064C00047E0C /* SceneDelegate.swift in Sources */,
 			);

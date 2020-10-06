@@ -16,16 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ff7-hR-Pyb">
-                                <rect key="frame" x="184" y="426" width="46" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="6Wg-AH-xLB"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="authenticateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0oZ-Tf-rni"/>
-                                </connections>
-                            </button>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="htc-2V-TrM">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -33,6 +23,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to see here!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgl-xs-c0N">
+                                <rect key="frame" x="129.5" y="437.5" width="155" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -40,14 +36,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="htc-2V-TrM" secondAttribute="trailing" id="4RV-kW-JHA"/>
                             <constraint firstItem="htc-2V-TrM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4bx-3M-DDY"/>
                             <constraint firstItem="htc-2V-TrM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8lY-sB-XPa"/>
+                            <constraint firstItem="Xgl-xs-c0N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jev-yE-Jpi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="htc-2V-TrM" secondAttribute="bottom" id="KoZ-xD-zmc"/>
-                            <constraint firstItem="Ff7-hR-Pyb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dzG-hz-7T4"/>
-                            <constraint firstItem="Ff7-hR-Pyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tq9-RO-7ec"/>
+                            <constraint firstItem="Xgl-xs-c0N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="buH-Nk-nAi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nra-xi-FbE"/>
                     <connections>
-                        <outlet property="authenticate" destination="Ff7-hR-Pyb" id="qJk-zU-Acu"/>
+                        <outlet property="label" destination="Xgl-xs-c0N" id="jUt-NN-ZWZ"/>
                         <outlet property="secret" destination="htc-2V-TrM" id="qLO-Za-6al"/>
                     </connections>
                 </viewController>

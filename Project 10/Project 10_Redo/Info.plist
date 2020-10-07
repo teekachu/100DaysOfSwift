@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string>SHOW YOUR IDENTITY!</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Take a photo of your friend</string>
 	<key>CFBundleDevelopmentRegion</key>

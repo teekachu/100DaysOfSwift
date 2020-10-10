@@ -11,6 +11,9 @@ import UIKit
 class ImageViewController: UIViewController {
     weak var owner: SelectionViewController!
     var image: String!
+    
+    var imagePath: String! // new
+    
     var animTimer: Timer!
     
     var imageView: UIImageView!
@@ -56,9 +59,13 @@ class ImageViewController: UIViewController {
         //        MARK: Redo:
         
         DispatchQueue.global(qos: .userInitiated).async {
-            guard let path = Bundle.main.path(forResource: self.image, ofType: nil) else{return}
-            let original = UIImage(contentsOfFile: path)!
             
+            // directly loading from filePath
+            guard let original = UIImage(contentsOfFile: self.imagePath) else{return}
+            
+//            guard let path = Bundle.main.path(forResource: self.image, ofType: nil) else{return}
+//            let original = UIImage(contentsOfFile: path)!
+//
             let renderer = UIGraphicsImageRenderer(size: original.size)
             
             let rounded = renderer.image { ctx in
@@ -68,11 +75,18 @@ class ImageViewController: UIViewController {
                 original.draw(at: CGPoint.zero)
             }
             
+            
             DispatchQueue.main.async {
                 self.imageView.image = rounded
-            }
-            
-        }
+            }// end of GCD
+        }// end of GCD
+        
+        
+    }//end of viewDidLoad
+    
+    func getDocumentsDirectory() -> URL{
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return path[0]
     }
     
     override func viewDidAppear(_ animated: Bool) {

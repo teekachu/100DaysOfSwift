@@ -11,9 +11,10 @@ import UIKit
 class SelectionViewController: UITableViewController {
     
     var items = [String]() // this is the array that will store the filenames to load
-//    var viewControllers = [UIViewController]() // create a cache of the detail view controllers for faster loading
+    //    var viewControllers = [UIViewController]() // create a cache of the detail view controllers for faster loading
     var dirty = false
     var original: UIImage?
+    var smolItems = [String]() // imagePaths saved.
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,23 +28,47 @@ class SelectionViewController: UITableViewController {
         // because there is no storyboard, this is how we register an identifier
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-        DispatchQueue.global(qos: .userInitiated).async {
-            // load all the JPEGs into our array
-            let fm = FileManager.default
-            guard let path = Bundle.main.resourcePath else{return}
-
-            if let tempItems = try? fm.contentsOfDirectory(atPath: path) {
-                for item in tempItems {
-                    if item.range(of: "Large") != nil {
-                        self.items.append(item)
-                    }
+        // load all the JPEGs into our array
+        
+        let fm = FileManager.default
+        guard let path = Bundle.main.resourcePath else{return}
+        
+        if let tempItems = try? fm.contentsOfDirectory(atPath: path) {
+            for item in tempItems {
+                if item.range(of: "Large") != nil {
+                    self.items.append(item)
                 }
             }
+            
+            // generate all images when app first Launch, and use smaller versions instead.
+            if smolItems.isEmpty{
+                for i in 0..<items.count{
+                    
+                    // for each item
+                    let currentImage = items[i]
+                    // use the thumb photo
+                    let imageRootName = currentImage.replacingOccurrences(of: "Large", with: "Thumb")
+                    guard let type = Bundle.main.path(forResource: imageRootName, ofType: nil) else{return}
+                    original = UIImage(contentsOfFile: type)
+                    
+                    let imageName = UUID().uuidString
+                    let imagePath = getDocumentsDirectory().appendingPathComponent(imageName)
+                    
+                    if let jpegData = original?.jpegData(compressionQuality: 0.8){
+                        try? jpegData.write(to: imagePath)
+                        smolItems.append(imagePath.path)
+                    }
+                }
+            }// end of IF stmt
+            
         }
-        
-        // generate all images when app first Launch, and use smaller versions instead.
-        
-        
+    } // end of VDL
+    
+    
+    
+    func getDocumentsDirectory() -> URL{
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -72,36 +97,39 @@ class SelectionViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-//        let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell") // ORIGINAL: where is dequeReusableCell???
+        //        let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell") // ORIGINAL: where is dequeReusableCell???
         
-//        //MARK-Rewrite #1 : To deque reusable cells first. Only if it fails to rewrite, then create new
-//        var cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "Cell")
-//        if cell == nil{
-//            cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
-//        }
+        //        //MARK-Rewrite #1 : To deque reusable cells first. Only if it fails to rewrite, then create new
+        //        var cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        //        if cell == nil{
+        //            cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
+        //        }
         
         //MARK-Rewrite #2
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
+        //MARK: challange 3 - moved up to viewDidLoad()
         // find the image for this cell, and load its thumbnail
-        let currentImage = items[indexPath.row % items.count]
-        let imageRootName = currentImage.replacingOccurrences(of: "Large", with: "Thumb")
-        if let path = Bundle.main.path(forResource: imageRootName, ofType: nil){
-            original = UIImage(contentsOfFile: path)
-        }
+        //        let currentImage = items[indexPath.row % items.count]
+        //        let imageRootName = currentImage.replacingOccurrences(of: "Large", with: "Thumb")
+        //        if let path = Bundle.main.path(forResource: imageRootName, ofType: nil){
+        //            original = UIImage(contentsOfFile: path)
+        //        }
         
+        let currentImage = smolItems[indexPath.row % smolItems.count]
+        original = UIImage(contentsOfFile: currentImage)
         
         //MARK: solution 2
         let renderRect = CGRect(origin: .zero, size: CGSize(width: 90, height: 90))
         let renderer = UIGraphicsImageRenderer(size: renderRect.size)
         //        let renderer = UIGraphicsImageRenderer(size: original.size)
         
-        
         let rounded = renderer.image { ctx in
             //MARK: solution 2, make images smaller as 2500x2500 pixel is too large for height 90 cells.
             ctx.cgContext.addEllipse(in: renderRect)
             ctx.cgContext.clip()
             original?.draw(in: renderRect)
+            
             
             //            //MARK: solution 1, use setShadow() inside UIGraphicsImageRenderer so we only use 1 renderer
             //            ctx.cgContext.setShadow(offset: CGSize.zero, blur: 200, color:  UIColor.black.cgColor)
@@ -124,9 +152,10 @@ class SelectionViewController: UITableViewController {
         cell.imageView?.layer.shadowOffset = CGSize.zero
         cell.imageView?.layer.shadowPath = UIBezierPath(ovalIn: renderRect).cgPath // give exact shadow by using UIBezierPath
         
-        // each image stores how often it's been tapped
-        let defaults = UserDefaults.standard
-        cell.textLabel?.text = "\(defaults.integer(forKey: currentImage))"
+        ////        each image stores how often it's been tapped
+        //        let imageTapped = items[indexPath.row % items.count]
+        //        let defaults = UserDefaults.standard
+        //        cell.textLabel?.text = "\(defaults.integer(forKey: imageTapped))"
         
         return cell
     }
@@ -135,13 +164,15 @@ class SelectionViewController: UITableViewController {
         
         let vc = ImageViewController()
         vc.image = items[indexPath.row % items.count]
+        vc.imagePath = smolItems[indexPath.row % smolItems.count]
+        
         vc.owner = self
         
         // mark us as not needing a counter reload when we return
         dirty = false
         
         // add to our view controller cache and show
-//        viewControllers.append(vc)
+        //        viewControllers.append(vc)
         navigationController!.pushViewController(vc, animated: true)
     }
 }

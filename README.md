@@ -55,9 +55,15 @@ P24: Working with Strings, NSAttributedString.
 
 P25: Working with Multipeer Networking, MCSession, MCBrowserViewController
 
-P26: PENDING*** SpriteKit - Marble Maze Game ( IPAD only)
+P26: SpriteKit - Marble Maze Game ( IPAD only)
 
 P27: Working with CoreGraphics 
+
+P28: Working with faceID and touchID, device Keychain
+
+P29: PENDING***  (spriteKit game exploding Monkey)
+
+P30: Intro to Instruments and more practice to debugging
 
 
 

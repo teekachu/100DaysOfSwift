@@ -65,6 +65,7 @@ P29: PENDING***  (spriteKit game exploding Monkey)
 
 P30: Intro to Instruments and more practice to debugging
 
+P31: Intro to multi-browsers and stackViews. 
 
 
 /CONSOLIDATED PROJECTS:

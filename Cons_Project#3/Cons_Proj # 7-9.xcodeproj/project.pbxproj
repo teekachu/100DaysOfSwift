@@ -15,11 +15,15 @@
 		E35FF02924A8111800C5313D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35FF02724A8111800C5313D /* Main.storyboard */; };
 		E35FF02B24A8112200C5313D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35FF02A24A8112200C5313D /* Assets.xcassets */; };
 		E35FF02E24A8112200C5313D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35FF02C24A8112200C5313D /* LaunchScreen.storyboard */; };
+		F42E4F502540AFF100C55706 /* TBLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42E4F4F2540AFF100C55706 /* TBLabel.swift */; };
+		F42F72362540C2A000A37DD5 /* TBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F72352540C2A000A37DD5 /* TBButton.swift */; };
+		F42F723D2540C44000A37DD5 /* TBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F723C2540C44000A37DD5 /* TBTextField.swift */; };
+		F42F72592540DC5100A37DD5 /* TBButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42F72582540DC5100A37DD5 /* TBButtonsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E3575B9424A916E900BCE3D7 /* Letters.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Letters.txt; sourceTree = SOURCE_ROOT; };
-		E3575B9824A9404900BCE3D7 /* Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Words.txt; sourceTree = SOURCE_ROOT; };
+		E3575B9424A916E900BCE3D7 /* Letters.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Letters.txt; path = "Cons_Proj # 7-9/support/Letters.txt"; sourceTree = SOURCE_ROOT; };
+		E3575B9824A9404900BCE3D7 /* Words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Words.txt; path = "Cons_Proj # 7-9/support/Words.txt"; sourceTree = SOURCE_ROOT; };
 		E35FF01E24A8111800C5313D /* Cons_Proj # 7-9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cons_Proj # 7-9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35FF02124A8111800C5313D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35FF02324A8111800C5313D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +32,10 @@
 		E35FF02A24A8112200C5313D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E35FF02D24A8112200C5313D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E35FF02F24A8112200C5313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42E4F4F2540AFF100C55706 /* TBLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBLabel.swift; sourceTree = "<group>"; };
+		F42F72352540C2A000A37DD5 /* TBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBButton.swift; sourceTree = "<group>"; };
+		F42F723C2540C44000A37DD5 /* TBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBTextField.swift; sourceTree = "<group>"; };
+		F42F72582540DC5100A37DD5 /* TBButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBButtonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +68,53 @@
 		E35FF02024A8111800C5313D /* Cons_Proj # 7-9 */ = {
 			isa = PBXGroup;
 			children = (
-				E35FF02524A8111800C5313D /* ViewController.swift */,
-				E3575B9424A916E900BCE3D7 /* Letters.txt */,
-				E3575B9824A9404900BCE3D7 /* Words.txt */,
+				F42F72562540DC3A00A37DD5 /* View */,
+				F42E4F4E2540AFD000C55706 /* UIpieces */,
+				F42F72492540CD4300A37DD5 /* ViewControllers */,
 				E35FF02124A8111800C5313D /* AppDelegate.swift */,
 				E35FF02324A8111800C5313D /* SceneDelegate.swift */,
 				E35FF02724A8111800C5313D /* Main.storyboard */,
+				F433901A2540A18000EF53E9 /* support */,
 				E35FF02A24A8112200C5313D /* Assets.xcassets */,
 				E35FF02C24A8112200C5313D /* LaunchScreen.storyboard */,
 				E35FF02F24A8112200C5313D /* Info.plist */,
 			);
 			path = "Cons_Proj # 7-9";
+			sourceTree = "<group>";
+		};
+		F42E4F4E2540AFD000C55706 /* UIpieces */ = {
+			isa = PBXGroup;
+			children = (
+				F42E4F4F2540AFF100C55706 /* TBLabel.swift */,
+				F42F72352540C2A000A37DD5 /* TBButton.swift */,
+				F42F723C2540C44000A37DD5 /* TBTextField.swift */,
+			);
+			path = UIpieces;
+			sourceTree = "<group>";
+		};
+		F42F72492540CD4300A37DD5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E35FF02524A8111800C5313D /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F42F72562540DC3A00A37DD5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F42F72582540DC5100A37DD5 /* TBButtonsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F433901A2540A18000EF53E9 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				E3575B9424A916E900BCE3D7 /* Letters.txt */,
+				E3575B9824A9404900BCE3D7 /* Words.txt */,
+			);
+			path = support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,7 +144,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = TeeksCode;
 				TargetAttributes = {
 					E35FF01D24A8111800C5313D = {
@@ -148,7 +192,11 @@
 			files = (
 				E35FF02624A8111800C5313D /* ViewController.swift in Sources */,
 				E35FF02224A8111800C5313D /* AppDelegate.swift in Sources */,
+				F42E4F502540AFF100C55706 /* TBLabel.swift in Sources */,
+				F42F72362540C2A000A37DD5 /* TBButton.swift in Sources */,
 				E35FF02424A8111800C5313D /* SceneDelegate.swift in Sources */,
+				F42F723D2540C44000A37DD5 /* TBTextField.swift in Sources */,
+				F42F72592540DC5100A37DD5 /* TBButtonsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +248,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -260,6 +309,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
